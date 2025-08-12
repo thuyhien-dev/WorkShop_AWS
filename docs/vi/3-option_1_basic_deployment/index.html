@@ -12,21 +12,21 @@
     <title>Tùy chọn 1 - Triển khai cơ bản :: Elastic Beanstalk Advanced Deployment Strategies</title>
 
     
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/nucleus.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/fontawesome-all.min.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/hybrid.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/featherlight.min.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/perfect-scrollbar.min.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/auto-complete.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/atom-one-dark-reasonable.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/theme.css?1754988568" rel="stylesheet">
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/hugo-theme.css?1754988568" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/nucleus.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/fontawesome-all.min.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/hybrid.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/featherlight.min.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/perfect-scrollbar.min.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/auto-complete.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/atom-one-dark-reasonable.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/theme.css?1754988753" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/hugo-theme.css?1754988753" rel="stylesheet">
     
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/theme-workshop.css?1754988568" rel="stylesheet">
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/css/theme-workshop.css?1754988753" rel="stylesheet">
     
     
 
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/jquery-3.3.1.min.js?1754988568"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/jquery-3.3.1.min.js?1754988753"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -58,14 +58,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://thuyhien-dev.github.io/WorkShop_AWS/js/lunr.min.js?1754988568"></script>
-<script type="text/javascript" src="https://thuyhien-dev.github.io/WorkShop_AWS/js/auto-complete.js?1754988568"></script>
+<script type="text/javascript" src="https://thuyhien-dev.github.io/WorkShop_AWS/js/lunr.min.js?1754988753"></script>
+<script type="text/javascript" src="https://thuyhien-dev.github.io/WorkShop_AWS/js/auto-complete.js?1754988753"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thuyhien-dev.github.io\/WorkShop_AWS\/\/vi";
     
 </script>
-<script type="text/javascript" src="https://thuyhien-dev.github.io/WorkShop_AWS/js/search.js?1754988568"></script>
+<script type="text/javascript" src="https://thuyhien-dev.github.io/WorkShop_AWS/js/search.js?1754988753"></script>
 
     
   </div>
@@ -595,7 +595,7 @@
 <li>Thời gian triển khai nhanh: 60–90 phút.</li>
 </ul>
 <h2 id="kiến-trúc-hệ-thống">Kiến trúc hệ thống</h2>
-<p><img src="images/option1_architecture.png" alt="Kiến trúc Tùy chọn 1"></p>
+<p><img src="https://thuyhien-dev.github.io/WorkShop_AWS/images/sad.png" alt="Kiến trúc Tùy chọn 1"></p>
 <p><strong>Thành phần chính:</strong></p>
 <ul>
 <li><strong>Frontend ReactJS</strong> → lưu trên S3, phân phối qua CloudFront.</li>
@@ -610,7 +610,7 @@
 <ul>
 <li>Tạo bảng <code>Rooms</code> và <code>Bookings</code> để lưu thông tin phòng và đặt phòng.</li>
 <li>Cấu hình Partition Key và Sort Key hợp lý.</li>
-<li><img src="images/step1_dynamodb.png" alt="Tạo bảng DynamoDB"></li>
+<li><img src="https://thuyhien-dev.github.io/WorkShop_AWS/images/3/1.png" alt="Tạo bảng DynamoDB"></li>
 </ul>
 </li>
 <li>
@@ -618,15 +618,14 @@
 <ul>
 <li>Kích hoạt đăng nhập qua email.</li>
 <li>Tạo các nhóm người dùng.</li>
-<li><img src="images/step2_cognito.png" alt="Tạo Cognito User Pool"></li>
+<li><img src="https://thuyhien-dev.github.io/WorkShop_AWS/images/3/2.png" alt="Tạo Cognito User Pool"></li>
 </ul>
 </li>
 <li>
 <p><strong>Viết và triển khai hàm Lambda</strong></p>
 <ul>
-<li>Các hàm: <code>CreateBooking</code>, <code>GetRooms</code>, <code>CancelBooking</code>.</li>
 <li>Sử dụng AWS SDK để kết nối DynamoDB và Cognito.</li>
-<li><img src="images/step3_lambda.png" alt="Triển khai Lambda"></li>
+<li><img src="https://thuyhien-dev.github.io/WorkShop_AWS/images/3/3.png" alt="Triển khai Lambda"></li>
 </ul>
 </li>
 <li>
@@ -634,7 +633,7 @@
 <ul>
 <li>Build ứng dụng ReactJS (<code>npm run build</code>).</li>
 <li>Upload thư mục <code>build</code> lên S3 bucket.</li>
-<li><img src="images/step4_s3.png" alt="Triển khai frontend trên S3"></li>
+<li><img src="https://thuyhien-dev.github.io/WorkShop_AWS/images/3/4.png" alt="Triển khai frontend trên S3"></li>
 </ul>
 </li>
 <li>
@@ -642,7 +641,7 @@
 <ul>
 <li>Tạo phân phối trỏ tới S3 bucket.</li>
 <li>Bật HTTPS với SSL/TLS.</li>
-<li><img src="images/step5_cloudfront.png" alt="Cấu hình CloudFront"></li>
+<li><img src="https://thuyhien-dev.github.io/WorkShop_AWS/images/3/5.png" alt="Cấu hình CloudFront"></li>
 </ul>
 </li>
 </ol>
@@ -905,19 +904,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/clipboard.min.js?1754988568"></script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/perfect-scrollbar.min.js?1754988568"></script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/perfect-scrollbar.jquery.min.js?1754988568"></script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/jquery.sticky.js?1754988568"></script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/featherlight.min.js?1754988568"></script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/highlight.pack.js?1754988568"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/clipboard.min.js?1754988753"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/perfect-scrollbar.min.js?1754988753"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/perfect-scrollbar.jquery.min.js?1754988753"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/jquery.sticky.js?1754988753"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/featherlight.min.js?1754988753"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/highlight.pack.js?1754988753"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/modernizr.custom-3.6.0.js?1754988568"></script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/learn.js?1754988568"></script>
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/hugo-learn.js?1754988568"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/modernizr.custom-3.6.0.js?1754988753"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/learn.js?1754988753"></script>
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/js/hugo-learn.js?1754988753"></script>
 
-    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/mermaid/mermaid.css?1754988568" rel="stylesheet" />
-    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/mermaid/mermaid.js?1754988568"></script>
+    <link href="https://thuyhien-dev.github.io/WorkShop_AWS/mermaid/mermaid.css?1754988753" rel="stylesheet" />
+    <script src="https://thuyhien-dev.github.io/WorkShop_AWS/mermaid/mermaid.js?1754988753"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
