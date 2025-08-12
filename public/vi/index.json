@@ -1,0 +1,99 @@
+[
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/1-introduce/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "Tổng quan Workshop Workshop này hướng dẫn bạn xây dựng và triển khai Hệ thống Quản lý Khách sạn trên AWS theo kiến trúc Cloud-Native.\nBạn sẽ thực hành thiết kế kiến trúc, triển khai backend serverless, lưu trữ và phân phối frontend, tích hợp xác thực người dùng và thiết lập giám sát hệ thống.\nMục tiêu là giúp bạn thành thạo các dịch vụ AWS như Lambda, DynamoDB, S3, CloudFront, Cognito và CodePipeline để tạo ra một giải pháp hoàn chỉnh, có khả năng mở rộng.\nHệ thống Quản lý Khách sạn là gì? Hệ thống Quản lý Khách sạn là phần mềm cho phép khách sạn quản lý toàn bộ hoạt động: đặt phòng, quản lý khách hàng, thanh toán, báo cáo doanh thu và dịch vụ.\nTrong dự án này, hệ thống được xây dựng hoàn toàn trên AWS với kiến trúc cloud-native và serverless, đảm bảo khả năng mở rộng, bảo mật và truy cập từ mọi nơi.\nThành phần chính: Frontend: Ứng dụng ReactJS SPA, giao diện thân thiện và responsive. Backend: AWS Lambda chạy Node.js xử lý nghiệp vụ. Cơ sở dữ liệu: DynamoDB (NoSQL) lưu trữ phòng, khách hàng và đặt phòng. Lưu trữ tĩnh: Amazon S3 cho hình ảnh và nội dung tĩnh. CDN: Amazon CloudFront giúp phân phối nội dung nhanh chóng trên toàn cầu. Xác thực: AWS Cognito cho đăng ký/đăng nhập và OTP qua email. Triển khai \u0026amp; CI/CD: AWS CodePipeline và CodeBuild. Lợi ích khi triển khai trên AWS Giảm chi phí vận hành: Kiến trúc serverless với mô hình trả theo mức sử dụng. Mở rộng linh hoạt: Tự động mở rộng khi lượng đặt phòng tăng. Bảo mật cao: Xác thực đa lớp và mã hóa dữ liệu. Quản lý tập trung: Truy cập và giám sát từ bất cứ đâu. Tự động hóa: Toàn bộ quy trình đặt phòng, thanh toán, báo cáo được tự động hóa. Kiến trúc hệ thống Hệ thống áp dụng kiến trúc cloud-native, tách biệt frontend, backend và dịch vụ dữ liệu.\nFrontend trên S3 + CloudFront. Backend trên Lambda kết nối DynamoDB và Cognito. CI/CD giúp cập nhật nhanh và an toàn. Trường hợp áp dụng thực tế Khách sạn vừa và nhỏ số hóa quy trình đặt phòng và thanh toán. Chủ khách sạn theo dõi doanh thu từ xa. Tích hợp với OTA như Agoda, Booking.com trong tương lai. Nền tảng SaaS phục vụ nhiều khách sạn. Các tùy chọn thực hành Tùy chọn 1: Triển khai cơ bản Mục tiêu: Làm quen với AWS Lambda, DynamoDB, S3, Cognito. Thời gian: 60–90 phút. Phù hợp cho: Người mới bắt đầu, dự án học tập. Tùy chọn 2: Triển khai nâng cao Mục tiêu: Xây dựng hệ thống đầy đủ với CI/CD và giám sát. Thời gian: 3–4 giờ. Phù hợp cho: Người dùng nâng cao, giải pháp doanh nghiệp. Yêu cầu chuẩn bị Cơ bản: Hiểu biết cơ bản về AWS và ứng dụng web. Quen với AWS Console và AWS CLI. Kiến thức cơ bản về ReactJS và Node.js. Nâng cao: Kinh nghiệm DevOps và CI/CD. Hiểu kiến trúc serverless và bảo mật trên cloud. Quản lý phiên bản và triển khai đa môi trường. Chuẩn bị Workshop Trước khi bắt đầu, bạn cần:\nTài khoản AWS (ưu tiên Free Tier). Mã nguồn hệ thống quản lý khách sạn. Kết nối Internet ổn định. Trình duyệt web hiện đại. Workshop này được thiết kế để chạy trong AWS Free Tier. Chi phí ước tính \u0026lt; 1 USD nếu làm đúng hướng dẫn.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.1-create-s3/",
+	"title": "Tạo S3 Bucket",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Tạo Amazon S3 Bucket để lưu trữ và phân phối frontend của hệ thống quản lý khách sạn.\nCác bước Mở AWS Management Console → vào S3. Chọn Create bucket. Nhập Bucket name (ví dụ: hotel-management-frontend). Chọn Region gần bạn (ví dụ: ap-southeast-1 – Singapore). Bỏ chọn Block all public access → xác nhận cảnh báo. Giữ nguyên các thiết lập mặc định → Create bucket. Kết quả Bạn đã có một S3 bucket để upload mã nguồn frontend.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.2-create-dynamodb/",
+	"title": "Tạo bảng DynamoDB",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Tạo bảng DynamoDB để lưu trữ dữ liệu phòng khách sạn, khách hàng và đặt phòng.\nCác bước Vào DynamoDB trong AWS Console. Nhấn Create table. Nhập: Tên bảng: Rooms Partition key: RoomID (Kiểu String) Giữ các thiết lập mặc định → Create table. Lặp lại để tạo bảng Bookings: Partition key: BookingID (Kiểu String) Sort key: CustomerID (Kiểu String) Kết quả Hai bảng để lưu trữ dữ liệu phòng và đặt phòng đã được tạo.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/2-prerequiste/",
+	"title": "Yêu cầu trước khi bắt đầu",
+	"tags": [],
+	"description": "",
+	"content": "Yêu cầu trước khi bắt đầu Workshop Để triển khai thành công Hệ thống Quản lý Khách sạn trên AWS, bạn cần chuẩn bị:\n1. Tài khoản và quyền truy cập Tài khoản AWS đang hoạt động (nên sử dụng Free Tier để tiết kiệm chi phí). Quyền AdministratorAccess để tạo và quản lý các dịch vụ như Lambda, DynamoDB, S3, CloudFront, Cognito, và CodePipeline. 2. Công cụ cần thiết Máy tính cá nhân chạy Windows, macOS hoặc Linux. Kết nối Internet ổn định. Trình duyệt web hiện đại (Chrome, Firefox, Edge). AWS CLI đã cài đặt và cấu hình. Git để quản lý mã nguồn. Visual Studio Code (hoặc IDE tương tự) để chỉnh sửa mã nguồn. 3. Kiến thức cơ bản Kiến thức cơ bản về ứng dụng web (frontend + backend). Quen thuộc với ReactJS và Node.js. Hiểu về các dịch vụ AWS cơ bản: Lambda, S3, DynamoDB, Cognito. Khái niệm CI/CD và DevOps. Mã nguồn và tài nguyên Bạn cần chuẩn bị:\nMã nguồn ứng dụng quản lý khách sạn mẫu (frontend ReactJS + backend Node.js). Bộ dữ liệu mẫu về hình ảnh và thông tin khách sạn (tuỳ chọn). Thời gian ước tính Người mới bắt đầu: 3–4 giờ (bao gồm cài đặt môi trường, tạo dịch vụ AWS và triển khai). Người đã quen AWS: 1–2 giờ. Chi phí ước tính Workshop được thiết kế chạy trong AWS Free Tier, chi phí ước tính \u0026lt; 1 USD nếu làm đúng hướng dẫn và xoá tài nguyên sau khi hoàn thành.\nNếu không xoá tài nguyên sau khi workshop kết thúc, AWS có thể tính phí hàng tháng.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.3-create-cognito/",
+	"title": "Tạo AWS Cognito User Pool",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Tạo User Pool trong AWS Cognito để quản lý đăng ký/đăng nhập và xác thực OTP qua email.\nCác bước Truy cập Cognito → Manage User Pools. Chọn Create user pool. Chọn Email làm phương thức đăng nhập. Bật MFA (tùy chọn) để tăng bảo mật. Cấu hình OTP qua email (AWS SES hoặc dịch vụ email tích hợp sẵn). Tạo các nhóm người dùng: Customers, Admins. Kết quả Người dùng có thể đăng ký và đăng nhập vào hệ thống một cách an toàn.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/",
+	"title": "Tùy chọn 1 - Triển khai cơ bản",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Ở Tùy chọn 1, bạn sẽ triển khai phiên bản cơ bản của Hệ thống Quản lý Khách sạn trên AWS, bao gồm:\nBackend serverless trên AWS Lambda. Lưu trữ dữ liệu trên DynamoDB. Xác thực người dùng với AWS Cognito. Lưu trữ frontend trên Amazon S3 và phân phối qua CloudFront. Lợi ích của Tùy chọn 1 Dễ triển khai, phù hợp cho người mới. Hoạt động trong AWS Free Tier. Có thể nâng cấp lên phiên bản nâng cao (Tùy chọn 2) sau này. Thời gian triển khai nhanh: 60–90 phút. Kiến trúc hệ thống Thành phần chính:\nFrontend ReactJS → lưu trên S3, phân phối qua CloudFront. Hàm Lambda → xử lý đặt phòng, quản lý khách hàng, thanh toán. DynamoDB → lưu trữ thông tin phòng, khách hàng và đặt phòng. Cognito → quản lý đăng ký/đăng nhập và xác thực OTP qua email. Quy trình triển khai Tạo bảng DynamoDB\nTạo bảng Rooms và Bookings để lưu thông tin phòng và đặt phòng. Cấu hình Partition Key và Sort Key hợp lý. Tạo AWS Cognito User Pool\nKích hoạt đăng nhập qua email. Tạo các nhóm người dùng. Viết và triển khai hàm Lambda\nCác hàm: CreateBooking, GetRooms, CancelBooking. Sử dụng AWS SDK để kết nối DynamoDB và Cognito. Triển khai frontend lên S3\nBuild ứng dụng ReactJS (npm run build). Upload thư mục build lên S3 bucket. Cấu hình CloudFront\nTạo phân phối trỏ tới S3 bucket. Bật HTTPS với SSL/TLS. Kết quả mong đợi Hệ thống quản lý khách sạn online hoạt động. Người dùng có thể đăng ký, đăng nhập và đặt phòng. Chủ khách sạn có thể xem và quản lý phòng đặt. Thời gian \u0026amp; Chi phí Thời gian: 1–1,5 giờ. Chi phí: \u0026lt; 1 USD/tháng trong Free Tier. Sau khi hoàn thành, bạn có thể nâng cấp lên Tùy chọn 2 để thêm CI/CD, giám sát và các tính năng nâng cao.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.4-deploy_lambda/",
+	"title": "Triển khai hàm Lambda",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Triển khai AWS Lambda Functions để xử lý đặt phòng, hủy đặt phòng và lấy danh sách phòng.\nCác bước Vào Lambda → Create function. Chọn Author from scratch: Upload toàn bộ code NodeJS lên Runtime: Node.js 18.x Kết nối Lambda với API Gateway để frontend có thể gọi API. Kết quả Backend serverless đã sẵn sàng hoạt động.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.5-configure_cloudfront/",
+	"title": "Cấu hình CloudFront",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Cấu hình Amazon CloudFront để phân phối nội dung frontend nhanh chóng tới người dùng.\nCác bước Vào CloudFront → Create distribution. Chọn Origin domain là S3 bucket đã tạo trước đó. Bật Redirect HTTP to HTTPS. Chọn Price Class (ví dụ: chỉ khu vực châu Á để tiết kiệm chi phí). Nhấn Create distribution. Kết quả Frontend được phân phối toàn cầu với bảo mật HTTPS.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/",
+	"title": "Test Hệ thống",
+	"tags": [],
+	"description": "",
+	"content": "1. Upload file ảnh sản phẩm lên website Đăng nhập admin hoặc truy cập chức năng thêm/sửa sản phẩm. Upload thử một ảnh sản phẩm. 2. Kiểm tra ảnh hiển thị trên website Xem lại trang chi tiết sản phẩm. Ảnh đã upload phải hiển thị đúng, có thể kiểm tra link ảnh (nếu dùng S3/CloudFront, đường dẫn phải trỏ về domain CDN hoặc S3). 3. Kiểm tra lưu trữ database Thêm/sửa/xóa sản phẩm, đơn hàng… trên web. Dùng công cụ quản lý MySQL (phpMyAdmin, Adminer, DBeaver…) hoặc AWS RDS Console để kiểm tra dữ liệu thực tế được lưu vào bảng. Nếu website báo lỗi database, kiểm tra lại Security Group và file cấu hình kết nối. 4. Kiểm tra domain và SSL Truy cập website qua domain riêng (https://yourshop.com). Đảm bảo trình duyệt có ổ khóa xanh (HTTPS). 5. Kiểm tra tốc độ tải ảnh (S3/CloudFront) Kiểm tra link ảnh sản phẩm trên web, đảm bảo tải nhanh, link dạng CDN/S3. Duyệt nhiều trang sản phẩm để cảm nhận sự tối ưu. 6. Kiểm tra CloudWatch logs \u0026amp; metrics Vào Elastic Beanstalk → Logs → Request logs để xem file log. Vào CloudWatch → Dashboards để xem số liệu realtime (CPU, Memory, HTTP errors…). Nếu có cấu hình alarm, thử thao tác lỗi để test cảnh báo (email/SNS). 7. Tổng hợp kết quả kiểm thử Web chạy ổn định, truy cập được qua domain riêng, bảo mật HTTPS. Upload, hiển thị ảnh sản phẩm thành công. Thao tác với dữ liệu (thêm, sửa, xóa sản phẩm, đơn hàng) thành công, database lưu đúng. Log sạch lỗi hoặc phát hiện lỗi dễ kiểm tra qua CloudWatch/Logs. TIP:\nNên kiểm thử cả trên mobile, desktop, nhiều trình duyệt, kiểm tra tốc độ tải ảnh, sản phẩm, khả năng chịu tải khi có nhiều truy cập!\nBạn đã kiểm thử đầy đủ hệ thống website bán điện thoại PHP trên AWS Elastic Beanstalk!\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/4-option_2_advanced_deployment/4.1-setup-codepipeline/",
+	"title": "Thiết lập CodePipeline",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Tự động build và triển khai hệ thống khi có thay đổi mã nguồn.\nCác bước Vào CodePipeline → Create pipeline. Kết nối GitHub (hoặc CodeCommit) để lấy mã nguồn. Thêm bước Build bằng AWS CodeBuild. Thêm bước Deploy: Backend → Lambda. Frontend → S3 + CloudFront. Nhấn Create pipeline. Kết quả Hệ thống sẽ tự động build và triển khai sau mỗi lần đẩy code.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/4-option_2_advanced_deployment/",
+	"title": "Giám sát với CloudWatch",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Giám sát hệ thống và nhận cảnh báo khi xảy ra sự cố.\nCác bước Vào CloudWatch. Tạo Log Group cho các Lambda Functions. Tạo Alarms: Lỗi 5xx của API Gateway. Thời gian phản hồi Lambda \u0026gt; 3 giây. Kết nối SNS để gửi cảnh báo qua email. Kết quả Hệ thống được giám sát 24/7, phát hiện sớm sự cố.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/cleanup_resources/",
+	"title": "Dọn dẹp tài nguyên",
+	"tags": [],
+	"description": "",
+	"content": "Mục tiêu Xóa toàn bộ tài nguyên AWS đã tạo trong Workshop Hệ thống Quản lý Khách sạn để tránh bị tính phí.\nCác bước Xóa CloudFront Distribution\nVào CloudFront, chọn distribution. Chọn Disable → đợi trạng thái Disabled. Chọn Delete. Xóa S3 Bucket\nVào S3, chọn bucket frontend. Xóa toàn bộ file bên trong. Chọn Delete bucket. Xóa bảng DynamoDB\nVào DynamoDB. Xóa bảng Rooms và Bookings. Xóa Cognito User Pool\nVào Cognito. Chọn User Pool và Delete. Xóa hàm Lambda\nVào Lambda. Xóa cả hàm hotel-app. Xóa API Gateway\nXóa toàn bộ API liên quan. Xóa CodePipeline và CodeBuild\nVào CodePipeline → xóa pipeline. Vào CodeBuild → xóa project. Xóa CloudWatch Alarms\nVào CloudWatch → xóa các cảnh báo. Lưu ý Một số dịch vụ như CloudFront cần vài phút để xóa hoàn toàn. Luôn kiểm tra Billing Dashboard sau khi dọn dẹp để đảm bảo không còn tài nguyên đang chạy. Nếu bỏ qua bước này, tài khoản AWS của bạn có thể phát sinh chi phí hàng tháng.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

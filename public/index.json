@@ -1,0 +1,99 @@
+[
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.1-create-s3/",
+	"title": "Create S3 Bucket",
+	"tags": [],
+	"description": "",
+	"content": "Objective Create an Amazon S3 Bucket to store and deliver the frontend of the hotel management system.\nSteps Open AWS Management Console → go to S3. Click Create bucket. Enter Bucket name (e.g., hotel-management-frontend). Select Region close to you (e.g., ap-southeast-1 – Singapore). Uncheck Block all public access → confirm the warning. Keep other settings default → Create bucket. Result You now have an S3 bucket to upload the frontend source code.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/1-introduce/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Workshop Overview This workshop guides you through building and deploying a Cloud-Native Hotel Management System on AWS.\nYou will practice designing the architecture, deploying a serverless backend, hosting and distributing the frontend, integrating user authentication, and setting up system monitoring.\nThe goal is to help participants master AWS services such as Lambda, DynamoDB, S3, CloudFront, Cognito, and CodePipeline to create a complete, scalable solution.\nWhat is the Hotel Management System? A Hotel Management System is a software platform that enables hotels to manage all operations: reservations, customer management, payments, revenue reporting, and service management.\nIn this project, the system is built entirely on AWS with a cloud-native and serverless architecture, ensuring scalability, security, and access from anywhere.\nMain Components: Frontend: ReactJS SPA with a user-friendly, responsive interface. Backend: AWS Lambda running Node.js for business logic. Database: DynamoDB (NoSQL) storing rooms, customers, and bookings. Static Storage: Amazon S3 for images and static content. CDN: Amazon CloudFront for fast global content delivery. Authentication: AWS Cognito for sign-up/sign-in and email OTP. Deployment \u0026amp; CI/CD: AWS CodePipeline and CodeBuild. Benefits of Deploying on AWS Reduced operating costs: Serverless infrastructure with pay-per-use. Flexible scalability: Automatically scales with booking traffic. High security: Multi-layer authentication and data encryption. Centralized management: Access and monitor from anywhere. Automation: Fully automated booking, payment, and reporting. System Architecture The system applies a cloud-native architecture, separating frontend, backend, and data services.\nFrontend on S3 + CloudFront. Backend on Lambda connected to DynamoDB and Cognito. CI/CD ensures fast and safe updates. Real-world Use Cases SME hotels digitalizing booking and payment processes. Hotel owners monitoring revenue remotely. Integration with OTAs like Agoda, Booking.com in the future. SaaS platform for multiple hotels. Practice Options Option 1: Basic Deployment Goal: Get familiar with AWS Lambda, DynamoDB, S3, Cognito. Duration: 60–90 minutes. Suitable for: Beginners, learning projects. Option 2: Advanced Deployment Goal: Build a full system with CI/CD and monitoring. Duration: 3–4 hours. Suitable for: Advanced users, enterprise solutions. Prerequisites Basic: Basic understanding of AWS and web applications. Familiarity with AWS Console and AWS CLI. Basic knowledge of ReactJS and Node.js. Advanced: DevOps and CI/CD experience. Understanding of serverless architecture and cloud security. Version management and multi-environment deployment. Workshop Preparation Before starting, you need:\nAWS account (preferably Free Tier). Sample hotel management application source code. Stable Internet connection. Modern web browser. This workshop is designed to run within the AWS Free Tier. Estimated cost \u0026lt; $1 USD if following instructions correctly.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.2-create-dynamodb/",
+	"title": "Create DynamoDB Tables",
+	"tags": [],
+	"description": "",
+	"content": "Objective Create DynamoDB tables to store hotel rooms, customers, and bookings data.\nSteps Go to DynamoDB in AWS Console. Click Create table. Enter: Table name: Rooms Partition key: RoomID (String) Keep default settings → Create table. Repeat to create Bookings table: Partition key: BookingID (String) Sort key: CustomerID (String) Result Two tables for storing room and booking data are created.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/2-prerequiste/",
+	"title": "Prerequisites",
+	"tags": [],
+	"description": "",
+	"content": "Requirements before starting the Workshop To successfully deploy the Hotel Management System on AWS, you should prepare:\n1. Account and Access An active AWS account (Free Tier recommended to save costs). AdministratorAccess permissions to create and manage services like Lambda, DynamoDB, S3, CloudFront, Cognito, and CodePipeline. 2. Required Tools Personal computer running Windows, macOS, or Linux. Stable internet connection. Modern web browser (Chrome, Firefox, Edge). AWS CLI installed and configured. Git for source code management. Visual Studio Code (or similar IDE) for code editing. 3. Basic Knowledge Basic understanding of web applications (frontend + backend). Familiarity with ReactJS and Node.js. Knowledge of core AWS services: Lambda, S3, DynamoDB, Cognito. Concepts of CI/CD and DevOps. Source Code and Resources You will need:\nSample hotel management application source code (frontend ReactJS + backend Node.js). Sample images and hotel data (optional). Estimated Time Beginners: 3–4 hours (including environment setup, AWS services creation, and deployment). Experienced AWS users: 1–2 hours. Estimated Cost The workshop is designed to run within the AWS Free Tier, with an estimated cost of \u0026lt; 1 USD if following instructions and deleting resources after completion.\nIf you do not delete resources after the workshop, AWS may charge you monthly.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.3-create-cognito/",
+	"title": "Create AWS Cognito User Pool",
+	"tags": [],
+	"description": "",
+	"content": "Objective Create a User Pool in AWS Cognito to manage user registration/login and email OTP verification.\nSteps Go to Cognito → Manage User Pools. Click Create user pool. Choose Email as the sign-in method. Enable MFA (optional) for extra security. Configure email OTP (AWS SES or built-in email service). Create user groups: Customers, Admins. Result Users can securely register and log in to the system.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/",
+	"title": "Option 1 - Basic Deployment",
+	"tags": [],
+	"description": "",
+	"content": "Objective In Option 1, you will deploy the basic version of the Hotel Management System on AWS, including:\nServerless backend on AWS Lambda. Data storage on DynamoDB. User authentication with AWS Cognito. Frontend hosting on Amazon S3 and distribution via CloudFront. Benefits of Option 1 Easy to deploy, suitable for beginners. Runs within the AWS Free Tier. Can be upgraded to the advanced version (Option 2) later. Fast deployment time: 60–90 minutes. System Architecture Main Components:\nReactJS Frontend → stored in S3, delivered via CloudFront. Lambda Functions → handle booking, customer management, and payment. DynamoDB → stores rooms, customers, and booking data. Cognito → manages registration/login and OTP verification via email. Deployment Process Create DynamoDB Tables\nCreate Rooms and Bookings tables to store room and booking information. Properly configure Partition Key and Sort Key. Create AWS Cognito User Pool\nEnable email-based authentication. Create user groups. Write and Deploy Lambda Functions\nUse AWS SDK to connect DynamoDB and Cognito. Deploy Frontend to S3\nBuild the ReactJS app (npm run build). Upload the build folder to the S3 bucket. Configure CloudFront\nCreate a distribution pointing to the S3 bucket. Enable HTTPS with SSL/TLS. Expected Results Online hotel management system is running. Users can register, log in, and book rooms. Hotel owners can view and manage bookings. Time \u0026amp; Cost Time: 1–1.5 hours. Cost: \u0026lt; 1 USD/month within the Free Tier. Once completed, you can upgrade to Option 2 to add CI/CD, monitoring, and advanced features.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/",
+	"title": "Option 1 - Basic Deployment",
+	"tags": [],
+	"description": "",
+	"content": "Objective In Option 1, you will deploy the basic version of the Hotel Management System on AWS, including:\nServerless backend on AWS Lambda. Data storage on DynamoDB. User authentication with AWS Cognito. Frontend hosting on Amazon S3 and distribution via CloudFront. Benefits of Option 1 Easy to deploy, suitable for beginners. Runs within the AWS Free Tier. Can be upgraded to the advanced version (Option 2) later. Fast deployment time: 60–90 minutes. System Architecture Main Components:\nReactJS Frontend → stored in S3, delivered via CloudFront. Lambda Functions → handle booking, customer management, payment. DynamoDB → store rooms, customers, and booking data. Cognito → manage registration/login and OTP verification via email. Deployment Process Create DynamoDB Tables\nCreate Rooms and Bookings tables to store room and booking info. Configure Partition Key and Sort Key properly. Create AWS Cognito User Pool\nEnable email-based authentication. Configure user groups. Write and Deploy Lambda Functions\nFunctions: CreateBooking, GetRooms, CancelBooking. Use AWS SDK to connect DynamoDB and Cognito. Deploy Frontend to S3\nBuild ReactJS app (npm run build). Upload build folder to S3 bucket. Configure CloudFront\nCreate distribution pointing to S3 bucket. Enable HTTPS with SSL/TLS. Expected Results Online hotel management system running. Users can register, log in, and book rooms. Hotel owners can view bookings and manage rooms. Time \u0026amp; Cost Time: 1–1.5 hours. Cost: \u0026lt; 1 USD/month in Free Tier. Once completed, you can upgrade to Option 2 to add CI/CD, monitoring, and advanced features.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.4-deploy_lambda/",
+	"title": "Deploy Lambda Functions",
+	"tags": [],
+	"description": "",
+	"content": "Objective Deploy AWS Lambda Functions to handle hotel booking, cancellation, and room listing.\nSteps Go to Lambda → Create function. Choose Author from scratch: Upload full code NodeJS Runtime: Node.js 18.x Connect Lambda with API Gateway so frontend can call APIs. Result The serverless backend is ready to operate.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.5-configure_cloudfront/",
+	"title": "Configure CloudFront",
+	"tags": [],
+	"description": "",
+	"content": "Objective Configure Amazon CloudFront to deliver frontend content quickly to users.\nSteps Go to CloudFront → Create distribution. Select Origin domain as the S3 bucket created earlier. Enable Redirect HTTP to HTTPS. Choose Price Class (e.g., Asia only to save cost). Click Create distribution. Result Frontend is delivered globally with HTTPS security.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/4-option_2_advanced_deployment/4.1-setup-codepipeline/",
+	"title": "Setup CodePipeline",
+	"tags": [],
+	"description": "",
+	"content": "Objective Automatically build and deploy the system when code changes.\nSteps Go to CodePipeline → Create pipeline. Connect to GitHub (or CodeCommit) for source code. Add Build stage using AWS CodeBuild. Add Deploy stage: Backend → Lambda. Frontend → S3 + CloudFront. Click Create pipeline. Result The system automatically builds and deploys after every code push.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/4-option_2_advanced_deployment/",
+	"title": "Monitor with CloudWatch",
+	"tags": [],
+	"description": "",
+	"content": "Objective Monitor the system and get alerts when issues occur.\nSteps Go to CloudWatch. Create Log Group for Lambda Functions. Create Alarms: API Gateway 5xx errors. Lambda response time \u0026gt; 3 seconds. Connect SNS to send email alerts. Result The system is monitored 24/7, allowing early issue detection.\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/cleanup_resources/",
+	"title": "Cleanup Resources",
+	"tags": [],
+	"description": "",
+	"content": "Objective Delete all AWS resources created in the Hotel Management System workshop to avoid unexpected charges.\nSteps Delete CloudFront Distribution\nGo to CloudFront, select the distribution. Click Disable → wait until status is Disabled. Click Delete. Delete S3 Bucket\nGo to S3, select the frontend bucket. Delete all files inside. Click Delete bucket. Delete DynamoDB Tables\nGo to DynamoDB. Delete Rooms and Bookings tables. Delete Cognito User Pool\nGo to Cognito. Select User Pool and click Delete. Delete Lambda Functions\nGo to Lambda. Delete hotel-app. Delete API Gateway\nDelete all related APIs. Delete CodePipeline and CodeBuild Projects\nGo to CodePipeline → delete pipeline. Go to CodeBuild → delete project. Delete CloudWatch Alarms\nGo to CloudWatch → delete alarms. Notes Some services like CloudFront may take a few minutes to delete completely. Always check the Billing Dashboard after cleanup to ensure no active resources remain. If you skip this step, your AWS account may incur monthly charges.\nx\n"
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thuyhien-dev.github.io/WorkShop_AWS/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
