@@ -23,7 +23,7 @@ pre : " <b> 3. </b> "
 
 ## Kiến trúc hệ thống
 
-![Kiến trúc Tùy chọn 1](images/option1_architecture.png)
+![Kiến trúc Tùy chọn 1](/images/sad.png)
 
 **Thành phần chính:**
 - **Frontend ReactJS** → lưu trên S3, phân phối qua CloudFront.
@@ -36,27 +36,26 @@ pre : " <b> 3. </b> "
 1. **Tạo bảng DynamoDB**
    - Tạo bảng `Rooms` và `Bookings` để lưu thông tin phòng và đặt phòng.
    - Cấu hình Partition Key và Sort Key hợp lý.
-   - ![Tạo bảng DynamoDB](images/step1_dynamodb.png)
+   - ![Tạo bảng DynamoDB](/images/3/1.png)
 
 2. **Tạo AWS Cognito User Pool**
    - Kích hoạt đăng nhập qua email.
    - Tạo các nhóm người dùng.
-   - ![Tạo Cognito User Pool](images/step2_cognito.png)
+   - ![Tạo Cognito User Pool](/images/3/2.png)
 
 3. **Viết và triển khai hàm Lambda**
-   - Các hàm: `CreateBooking`, `GetRooms`, `CancelBooking`.
    - Sử dụng AWS SDK để kết nối DynamoDB và Cognito.
-   - ![Triển khai Lambda](images/step3_lambda.png)
+   - ![Triển khai Lambda](/images/3/3.png)
 
 4. **Triển khai frontend lên S3**
    - Build ứng dụng ReactJS (`npm run build`).
    - Upload thư mục `build` lên S3 bucket.
-   - ![Triển khai frontend trên S3](images/step4_s3.png)
+   - ![Triển khai frontend trên S3](/images/3/4.png)
 
 5. **Cấu hình CloudFront**
    - Tạo phân phối trỏ tới S3 bucket.
    - Bật HTTPS với SSL/TLS.
-   - ![Cấu hình CloudFront](images/step5_cloudfront.png)
+   - ![Cấu hình CloudFront](/images/3/5.png)
 
 ## Kết quả mong đợi
 

@@ -44,7 +44,7 @@ pre : " <b> 5. </b> "
 
 ## 6. Kiểm tra CloudWatch logs & metrics
 
-- Vào Elastic Beanstalk → Logs → Request logs để xem file log.
+- Vào Hotel Management AWS → Logs → Request logs để xem file log.
 - Vào **CloudWatch** → Dashboards để xem số liệu realtime (CPU, Memory, HTTP errors…).
 - Nếu có cấu hình alarm, thử thao tác lỗi để test cảnh báo (email/SNS).
 
@@ -64,4 +64,4 @@ pre : " <b> 5. </b> "
 
 ---
 
-**Bạn đã kiểm thử đầy đủ hệ thống website bán điện thoại PHP trên AWS Elastic Beanstalk!**
+**Bạn đã kiểm thử đầy đủ hệ thống website bán điện thoại PHP trên AWS Hotel Management AWS!**

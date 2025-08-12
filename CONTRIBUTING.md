@@ -1,4 +1,4 @@
-# Contributing to AWS Elastic Beanstalk Workshop
+# Contributing to AWS Hotel Management AWS Workshop
 
 Thank you for your interest in contributing to this workshop! We welcome contributions from the community to make this resource better for everyone.
 
@@ -28,22 +28,22 @@ Thank you for your interest in contributing to this workshop! We welcome contrib
 ## 📝 Content Guidelines
 
 ### Workshop Content
-- **Accuracy**: Ensure all technical information about Elastic Beanstalk and related AWS services is correct
-- **Clarity**: Write clear, step-by-step instructions for deploying and managing apps in Elastic Beanstalk
+- **Accuracy**: Ensure all technical information about Hotel Management AWS and related AWS services is correct
+- **Clarity**: Write clear, step-by-step instructions for deploying and managing apps in Hotel Management AWS
 - **Completeness**: Include all necessary details, including environment setup, scaling, and deployment options
-- **Testing**: Verify all steps work as described in an AWS Elastic Beanstalk environment
+- **Testing**: Verify all steps work as described in an AWS Hotel Management AWS environment
 
 ### Code Examples
-- **Functionality**: All code must work as intended on Elastic Beanstalk
+- **Functionality**: All code must work as intended on Hotel Management AWS
 - **Comments**: Include helpful comments for configuration and deployment
-- **Best Practices**: Follow AWS Elastic Beanstalk and language-specific best practices
+- **Best Practices**: Follow AWS Hotel Management AWS and language-specific best practices
 - **Security**: Never include sensitive information (keys, passwords, etc.)
 
 ### Documentation
 - **Markdown**: Use proper Markdown formatting
 - **Hugo**: Follow Hugo content structure
 - **Bilingual**: Maintain both English and Vietnamese versions
-- **Screenshots**: Update images when AWS Elastic Beanstalk Console UI changes
+- **Screenshots**: Update images when AWS Hotel Management AWS Console UI changes
 
 ## 🌐 Translation Guidelines
 

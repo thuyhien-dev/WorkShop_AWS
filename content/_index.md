@@ -1,6 +1,6 @@
 ---
 title : "Option 1 - Basic Deployment"
-date: 2025-06-18
+date: 2025-08-12
 weight : 3
 chapter : false
 pre : " <b> 3. </b> "
@@ -18,12 +18,12 @@ In **Option 1**, you will deploy the **basic version** of the Hotel Management S
 
 - Easy to deploy, suitable for beginners.
 - Runs within the **AWS Free Tier**.
-- Can be upgraded to the advanced version (Option 2) later.
+- Can be upgraded to the advanced version (Option 2) later.eans
 - Fast deployment time: 60–90 minutes.
 
 ## System Architecture
 
-![Option 1 Architecture](images/option1_architecture.png)
+![Option 1 Architecture](/images/sad.png)
 
 **Main Components:**
 - **ReactJS Frontend** → stored in S3, delivered via CloudFront.
@@ -36,27 +36,26 @@ In **Option 1**, you will deploy the **basic version** of the Hotel Management S
 1. **Create DynamoDB Tables**
    - Create `Rooms` and `Bookings` tables to store room and booking info.
    - Configure Partition Key and Sort Key properly.
-   - ![Create DynamoDB Table](images/step1_dynamodb.png)
+   - ![Create DynamoDB Table](/images/3/1.png)
 
 2. **Create AWS Cognito User Pool**
    - Enable email-based authentication.
    - Configure user groups.
-   - ![Create Cognito User Pool](images/step2_cognito.png)
+   - ![Create Cognito User Pool](/images/3/2.png)
 
 3. **Write and Deploy Lambda Functions**
-   - Functions: `CreateBooking`, `GetRooms`, `CancelBooking`.
    - Use AWS SDK to connect DynamoDB and Cognito.
-   - ![Deploy Lambda Function](images/step3_lambda.png)
+   - ![Deploy Lambda Function](/images/3/3.png)
 
 4. **Deploy Frontend to S3**
    - Build ReactJS app (`npm run build`).
    - Upload `build` folder to S3 bucket.
-   - ![Deploy Frontend on S3](images/step4_s3.png)
+   - ![Deploy Frontend on S3](/images/3/4.png)
 
 5. **Configure CloudFront**
    - Create distribution pointing to S3 bucket.
    - Enable HTTPS with SSL/TLS.
-   - ![Configure CloudFront](images/step5_cloudfront.png)
+   - ![Configure CloudFront](/images/3/5.png)
 
 ## Expected Results
 
