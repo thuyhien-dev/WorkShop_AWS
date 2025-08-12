@@ -33,8 +33,6 @@ pre : " <b> 2. </b> "
 Bạn cần chuẩn bị:
 - **Mã nguồn ứng dụng quản lý khách sạn mẫu** (frontend ReactJS + backend Node.js).
 - Bộ dữ liệu mẫu về hình ảnh và thông tin khách sạn (tuỳ chọn).
-- Sơ đồ kiến trúc tham khảo:  
-![Sơ đồ kiến trúc hệ thống](images/architecture.png)
 
 ## Thời gian ước tính
 

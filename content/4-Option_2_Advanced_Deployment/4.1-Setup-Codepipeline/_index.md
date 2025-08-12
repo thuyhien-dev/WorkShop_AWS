@@ -19,7 +19,7 @@ Automatically build and deploy the system when code changes.
    - Frontend → S3 + CloudFront.
 5. Click **Create pipeline**.
 
-![Setup CodePipeline](images/setup_codepipeline.png)
+![Setup CodePipeline](/images/setup_codepipeline.png)
 
 ## Result
 

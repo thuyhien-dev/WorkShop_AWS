@@ -21,7 +21,7 @@ Create **DynamoDB tables** to store hotel rooms, customers, and bookings data.
    - **Partition key**: `BookingID` (String)
    - **Sort key**: `CustomerID` (String)
 
-![Create DynamoDB Table](images/create_dynamodb_table.png)
+![Create DynamoDB Table](/images/3_2/1.png)
 
 ## Result
 

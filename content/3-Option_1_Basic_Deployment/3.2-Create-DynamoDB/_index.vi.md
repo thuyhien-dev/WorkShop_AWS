@@ -21,7 +21,7 @@ Tạo **bảng DynamoDB** để lưu trữ dữ liệu phòng khách sạn, khá
    - **Partition key**: `BookingID` (Kiểu String)
    - **Sort key**: `CustomerID` (Kiểu String)
 
-![Tạo bảng DynamoDB](images/create_dynamodb_table.png)
+![Tạo bảng DynamoDB](/images/3_2/1.png)
 
 ## Kết quả
 

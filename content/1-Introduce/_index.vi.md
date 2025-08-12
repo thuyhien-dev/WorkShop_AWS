@@ -41,7 +41,7 @@ Hệ thống áp dụng kiến trúc cloud-native, tách biệt frontend, backen
 - **Backend** trên Lambda kết nối DynamoDB và Cognito.  
 - **CI/CD** giúp cập nhật nhanh và an toàn.  
 
-![Sơ đồ kiến trúc hệ thống](images/architecture.png)
+![Sơ đồ kiến trúc hệ thống](/images/sad.png)
 
 
 

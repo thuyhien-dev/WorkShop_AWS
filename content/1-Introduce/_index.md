@@ -41,7 +41,7 @@ The system applies a cloud-native architecture, separating frontend, backend, an
 - **Backend** on Lambda connected to DynamoDB and Cognito.  
 - **CI/CD** ensures fast and safe updates.  
 
-![System Architecture Diagram](images/architecture.png)
+![System Architecture Diagram](/images/sad.png)
 
 
 ## Real-world Use Cases

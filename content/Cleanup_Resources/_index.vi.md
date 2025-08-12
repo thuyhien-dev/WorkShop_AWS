@@ -31,7 +31,7 @@ Xóa toàn bộ tài nguyên AWS đã tạo trong **Workshop Hệ thống Quản
 
 5. **Xóa hàm Lambda**
    - Vào **Lambda**.
-   - Xóa `CreateBooking`, `GetRooms`, `CancelBooking`.
+   - Xóa cả hàm `hotel-app`.
 
 6. **Xóa API Gateway**
    - Xóa toàn bộ API liên quan.
@@ -43,7 +43,6 @@ Xóa toàn bộ tài nguyên AWS đã tạo trong **Workshop Hệ thống Quản
 8. **Xóa CloudWatch Alarms**
    - Vào **CloudWatch** → xóa các cảnh báo.
 
-![Xóa tài nguyên AWS](images/delete_resources.png)
 
 ## Lưu ý
 

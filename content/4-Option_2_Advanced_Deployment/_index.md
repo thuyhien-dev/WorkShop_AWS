@@ -18,7 +18,7 @@ Monitor the system and get alerts when issues occur.
    - Lambda response time > 3 seconds.
 4. Connect **SNS** to send email alerts.
 
-![CloudWatch Monitoring](images/cloudwatch_monitoring.png)
+![CloudWatch Monitoring](/images/cloudwatch_monitoring.png)
 
 ## Result
 

@@ -18,7 +18,7 @@ Create an **Amazon S3 Bucket** to store and deliver the frontend of the hotel ma
 5. **Uncheck Block all public access** → confirm the warning.
 6. Keep other settings default → **Create bucket**.
 
-![Create S3 Bucket](images/create_s3_bucket.png)
+![Create S3 Bucket](/images/3_1/1.png)
 
 ## Result
 

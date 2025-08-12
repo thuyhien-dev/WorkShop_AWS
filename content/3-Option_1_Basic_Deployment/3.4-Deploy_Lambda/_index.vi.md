@@ -13,15 +13,11 @@ Triển khai **AWS Lambda Functions** để xử lý đặt phòng, hủy đặt
 
 1. Vào **Lambda** → **Create function**.
 2. Chọn **Author from scratch**:
-   - **Function name**: `CreateBooking`
+   - **Upload toàn bộ code NodeJS lên**
    - **Runtime**: Node.js 18.x
-3. Viết logic xử lý nghiệp vụ và kết nối tới DynamoDB, Cognito.
-4. Lặp lại để tạo:
-   - `GetRooms`
-   - `CancelBooking`
-5. Kết nối Lambda với **API Gateway** để frontend có thể gọi API.
+3. Kết nối Lambda với **API Gateway** để frontend có thể gọi API.
 
-![Triển khai Lambda](images/deploy_lambda.png)
+![Triển khai Lambda](/images/3_4/1.png)
 
 ## Kết quả
 

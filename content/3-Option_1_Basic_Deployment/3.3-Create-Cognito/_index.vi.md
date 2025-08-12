@@ -18,7 +18,7 @@ Tạo **User Pool** trong AWS Cognito để quản lý đăng ký/đăng nhập 
 5. Cấu hình OTP qua email (AWS SES hoặc dịch vụ email tích hợp sẵn).
 6. Tạo các nhóm người dùng: `Customers`, `Admins`.
 
-![Cấu hình Cognito](images/create_cognito.png)
+![Cấu hình Cognito](/images/3_3/1.png)
 
 ## Kết quả
 

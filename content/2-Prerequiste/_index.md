@@ -33,8 +33,6 @@ To successfully deploy the **Hotel Management System on AWS**, you should prepar
 You will need:
 - **Sample hotel management application source code** (frontend ReactJS + backend Node.js).
 - Sample images and hotel data (optional).
-- Reference architecture diagram:  
-![System Architecture](images/architecture.png)
 
 ## Estimated Time
 

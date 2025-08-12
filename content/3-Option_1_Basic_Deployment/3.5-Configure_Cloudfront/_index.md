@@ -17,7 +17,7 @@ Configure **Amazon CloudFront** to deliver frontend content quickly to users.
 4. Choose **Price Class** (e.g., Asia only to save cost).
 5. Click **Create distribution**.
 
-![Configure CloudFront](images/configure_cloudfront.png)
+![Configure CloudFront](/images/configure_cloudfront.png)
 
 ## Result
 

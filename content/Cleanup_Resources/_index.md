@@ -31,7 +31,7 @@ Delete all AWS resources created in the **Hotel Management System workshop** to 
 
 5. **Delete Lambda Functions**
    - Go to **Lambda**.
-   - Delete `CreateBooking`, `GetRooms`, `CancelBooking`.
+   - Delete `hotel-app`.
 
 6. **Delete API Gateway**
    - Delete all related APIs.
@@ -42,8 +42,6 @@ Delete all AWS resources created in the **Hotel Management System workshop** to 
 
 8. **Delete CloudWatch Alarms**
    - Go to **CloudWatch** → delete alarms.
-
-![Delete AWS Resources](images/delete_resources.png)
 
 ## Notes
 

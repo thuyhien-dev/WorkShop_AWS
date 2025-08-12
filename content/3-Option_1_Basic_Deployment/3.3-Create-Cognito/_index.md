@@ -18,7 +18,7 @@ Create a **User Pool** in AWS Cognito to manage user registration/login and emai
 5. Configure email OTP (AWS SES or built-in email service).
 6. Create user groups: `Customers`, `Admins`.
 
-![Configure Cognito](images/create_cognito.png)
+![Configure Cognito](/images/3_3/1.png)
 
 ## Result
 

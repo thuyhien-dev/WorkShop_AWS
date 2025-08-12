@@ -13,15 +13,11 @@ Deploy **AWS Lambda Functions** to handle hotel booking, cancellation, and room 
 
 1. Go to **Lambda** → **Create function**.
 2. Choose **Author from scratch**:
-   - **Function name**: `CreateBooking`
+   - **Upload full code NodeJS**
    - **Runtime**: Node.js 18.x
-3. Write business logic and connect to DynamoDB, Cognito.
-4. Repeat to create:
-   - `GetRooms`
-   - `CancelBooking`
-5. Connect Lambda with **API Gateway** so frontend can call APIs.
+3. Connect Lambda with **API Gateway** so frontend can call APIs.
 
-![Deploy Lambda](images/deploy_lambda.png)
+![Deploy Lambda](/images/3_4/1.png)
 
 ## Result
 

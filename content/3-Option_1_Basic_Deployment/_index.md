@@ -23,7 +23,6 @@ In **Option 1**, you will deploy the **basic version** of the Hotel Management S
 
 ## System Architecture
 
-![Option 1 Architecture](images/option1_architecture.png)
 
 **Main Components:**
 - **ReactJS Frontend** → stored in S3, delivered via CloudFront.
@@ -36,27 +35,26 @@ In **Option 1**, you will deploy the **basic version** of the Hotel Management S
 1. **Create DynamoDB Tables**
    - Create `Rooms` and `Bookings` tables to store room and booking information.
    - Properly configure Partition Key and Sort Key.
-   - ![Create DynamoDB Table](images/step1_dynamodb.png)
+   - ![Create DynamoDB Table](/images/3/1.png)
 
 2. **Create AWS Cognito User Pool**
    - Enable email-based authentication.
    - Create user groups.
-   - ![Create Cognito User Pool](images/step2_cognito.png)
+   - ![Create Cognito User Pool](/images/3/2.png)
 
 3. **Write and Deploy Lambda Functions**
-   - Functions: `CreateBooking`, `GetRooms`, `CancelBooking`.
    - Use AWS SDK to connect DynamoDB and Cognito.
-   - ![Deploy Lambda](images/step3_lambda.png)
+   - ![Deploy Lambda](/images/3/3.png)
 
 4. **Deploy Frontend to S3**
    - Build the ReactJS app (`npm run build`).
    - Upload the `build` folder to the S3 bucket.
-   - ![Deploy Frontend on S3](images/step4_s3.png)
+   - ![Deploy Frontend on S3](/images/3/4.png)
 
 5. **Configure CloudFront**
    - Create a distribution pointing to the S3 bucket.
    - Enable HTTPS with SSL/TLS.
-   - ![Configure CloudFront](images/step5_cloudfront.png)
+   - ![Configure CloudFront](/images/3/5.png)
 
 ## Expected Results
 
