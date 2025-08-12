@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Elastic Beanstalk Advanced Deployment Strategies</title>
-    <link>/categories/</link>
+    <link>https://thuyhien-dev.github.io/WorkShop_AWS/categories/</link>
     <description>Recent content in Categories on Elastic Beanstalk Advanced Deployment Strategies</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://thuyhien-dev.github.io/WorkShop_AWS/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

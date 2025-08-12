@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tạo bảng DynamoDB on Elastic Beanstalk Advanced Deployment Strategies</title>
-    <link>/vi/3-option_1_basic_deployment/3.2-create-dynamodb/</link>
+    <link>https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.2-create-dynamodb/</link>
     <description>Recent content in Tạo bảng DynamoDB on Elastic Beanstalk Advanced Deployment Strategies</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/vi/3-option_1_basic_deployment/3.2-create-dynamodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.2-create-dynamodb/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
