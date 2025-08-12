@@ -2,184 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.1-create-s3/</loc>
+    <loc>/3-option_1_basic_deployment/3.1-create-s3/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.1-create-s3/"
+                href="/vi/3-option_1_basic_deployment/3.1-create-s3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.1-create-s3/"
+                href="/3-option_1_basic_deployment/3.1-create-s3/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/1-introduce/</loc>
+    <loc>/1-introduce/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/1-introduce/"
+                href="/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/1-introduce/"
+                href="/1-introduce/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.2-create-dynamodb/</loc>
+    <loc>/3-option_1_basic_deployment/3.2-create-dynamodb/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.2-create-dynamodb/"
+                href="/vi/3-option_1_basic_deployment/3.2-create-dynamodb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.2-create-dynamodb/"
+                href="/3-option_1_basic_deployment/3.2-create-dynamodb/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/2-prerequiste/</loc>
+    <loc>/2-prerequiste/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/2-prerequiste/"
+                href="/vi/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/2-prerequiste/"
+                href="/2-prerequiste/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.3-create-cognito/</loc>
+    <loc>/3-option_1_basic_deployment/3.3-create-cognito/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.3-create-cognito/"
+                href="/vi/3-option_1_basic_deployment/3.3-create-cognito/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.3-create-cognito/"
+                href="/3-option_1_basic_deployment/3.3-create-cognito/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/</loc>
+    <loc>/3-option_1_basic_deployment/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/"
+                href="/vi/3-option_1_basic_deployment/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/"
+                href="/3-option_1_basic_deployment/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/</loc>
+    <loc>/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/"
+                href="/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/"
+                href="/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.4-deploy_lambda/</loc>
+    <loc>/3-option_1_basic_deployment/3.4-deploy_lambda/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.4-deploy_lambda/"
+                href="/vi/3-option_1_basic_deployment/3.4-deploy_lambda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.4-deploy_lambda/"
+                href="/3-option_1_basic_deployment/3.4-deploy_lambda/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.5-configure_cloudfront/</loc>
+    <loc>/3-option_1_basic_deployment/3.5-configure_cloudfront/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.5-configure_cloudfront/"
+                href="/vi/3-option_1_basic_deployment/3.5-configure_cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/3-option_1_basic_deployment/3.5-configure_cloudfront/"
+                href="/3-option_1_basic_deployment/3.5-configure_cloudfront/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/4-option_2_advanced_deployment/4.1-setup-codepipeline/</loc>
+    <loc>/4-option_2_advanced_deployment/4.1-setup-codepipeline/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/4-option_2_advanced_deployment/4.1-setup-codepipeline/"
+                href="/vi/4-option_2_advanced_deployment/4.1-setup-codepipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/4-option_2_advanced_deployment/4.1-setup-codepipeline/"
+                href="/4-option_2_advanced_deployment/4.1-setup-codepipeline/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/4-option_2_advanced_deployment/</loc>
+    <loc>/4-option_2_advanced_deployment/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/4-option_2_advanced_deployment/"
+                href="/vi/4-option_2_advanced_deployment/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/4-option_2_advanced_deployment/"
+                href="/4-option_2_advanced_deployment/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/cleanup_resources/</loc>
+    <loc>/cleanup_resources/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/cleanup_resources/"
+                href="/vi/cleanup_resources/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/cleanup_resources/"
+                href="/cleanup_resources/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/categories/</loc>
+    <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/categories/"
+                href="/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/categories/"
+                href="/categories/"
                 />
   </url><url>
-    <loc>https://thuyhien-dev.github.io/WorkShop_AWS/tags/</loc>
+    <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/vi/tags/"
+                href="/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thuyhien-dev.github.io/WorkShop_AWS/tags/"
+                href="/tags/"
                 />
   </url>
 </urlset>
