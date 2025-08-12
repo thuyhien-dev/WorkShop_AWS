@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Triển khai hàm Lambda on Elastic Beanstalk Advanced Deployment Strategies</title>
+    <title>Triển khai hàm Lambda on Quản lý khách sạn trên AWS</title>
     <link>https://thuyhien-dev.github.io/WorkShop_AWS/vi/3-option_1_basic_deployment/3.4-deploy_lambda/</link>
-    <description>Recent content in Triển khai hàm Lambda on Elastic Beanstalk Advanced Deployment Strategies</description>
+    <description>Recent content in Triển khai hàm Lambda on Quản lý khách sạn trên AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
